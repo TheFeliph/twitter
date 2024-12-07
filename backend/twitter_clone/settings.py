@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure--ugz-#nh+d2^b)w%1__l0aio%du4a!ydsuq4_uoy+jhi#w5b9j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Analice.pythonanywhere.com', 'analice.pythonanywhere.com']
+ALLOWED_HOSTS = ['thefeliph.pythonanywhere.com', 'thefeliph.pythonanywhere.com']
 
 
 # Application definition
@@ -180,6 +180,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # Diretório local de estáticos (se aplicável)
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
