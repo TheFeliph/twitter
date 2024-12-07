@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure--ugz-#nh+d2^b)w%1__l0aio%du4a!ydsuq4_uoy+jhi#w5b9j"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['thefeliph.pythonanywhere.com', 'thefeliph.pythonanywhere.com']
+ALLOWED_HOSTS = ['feliph2004.pythonanywhere.com']
 
 
 # Application definition
@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'tweets',                
     'notifications',          
     'follows',       
-    'login'        
+    'accounts'        
 ]
 
 
